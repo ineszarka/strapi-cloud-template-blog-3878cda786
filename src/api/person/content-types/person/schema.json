@@ -12,8 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Surname": {
+      "type": "string",
+      "required": true
+    },
+    "Confirmation": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     },
     "blocks": {
       "type": "dynamiczone",
