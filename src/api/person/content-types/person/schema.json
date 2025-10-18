@@ -1,11 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "abouts",
+  "collectionName": "persons",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "About",
-    "description": "Write about yourself and the content you create"
+    "singularName": "person",
+    "pluralName": "persons",
+    "displayName": "Persons",
+    "description": "Track invited people"
   },
   "options": {
     "draftAndPublish": false
