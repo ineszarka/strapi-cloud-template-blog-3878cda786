@@ -12,17 +12,31 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "Nom": {
       "type": "string",
       "required": true
     },
-    "Surname": {
+    "Prénom": {
       "type": "string",
       "required": true
     },
-    "Confirmation": {
+    "Ma présence au mariage": {
       "type": "boolean",
       "default": true,
+      "required": true
+    },
+    "Ma présence au Brunch": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Vegetarien": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Allergies": {
+      "type": "string",
       "required": true
     },
     "blocks": {
