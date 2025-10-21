@@ -442,8 +442,8 @@ export interface ApiPersonPerson extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Allergies: Schema.Attribute.String & Schema.Attribute.Required;
-    Confirmation: Schema.Attribute.Boolean & Schema.Attribute.Required;
+    allergies: Schema.Attribute.String & Schema.Attribute.Required;
+    confirm: Schema.Attribute.Boolean & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -453,13 +453,13 @@ export interface ApiPersonPerson extends Struct.CollectionTypeSchema {
       'api::person.person'
     > &
       Schema.Attribute.Private;
-    Nom: Schema.Attribute.String;
-    Prenom: Schema.Attribute.String;
+    nom: Schema.Attribute.String & Schema.Attribute.Required;
+    prenom: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Vegetarien: Schema.Attribute.Boolean & Schema.Attribute.Required;
+    vege: Schema.Attribute.Boolean & Schema.Attribute.Required;
   };
 }
 

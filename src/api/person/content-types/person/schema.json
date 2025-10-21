@@ -12,23 +12,30 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nom": {
-      "type": "string"
-    },
-    "Prenom": {
-      "type": "string"
-    },
-    "Confirmation": {
-      "type": "boolean",
-      "required":true
-    },
-    "Vegetarien": {
-      "type": "boolean",
-      "required":true
-    },
-     "Allergies": {
+    "nom": {
       "type": "string",
-      "required":true
+      "required":true,
+      "displayName": "Nom"
+    },
+    "prenom": {
+      "type": "string",
+      "required":true,
+      "displayName": "Nom"
+    },
+    "confirm": {
+      "type": "boolean",
+      "required":true,
+      "displayName": "Confirmation"
+    },
+    "vege": {
+      "type": "boolean",
+      "required":true,
+      "displayName": "Végétarien"
+    },
+     "allergies": {
+      "type": "string",
+      "required":true,
+      "displayName": "Végétarien"
     }
   }
 }
