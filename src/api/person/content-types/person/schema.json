@@ -1,47 +1,34 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "persons",
   "info": {
     "singularName": "person",
     "pluralName": "persons",
-    "displayName": "Persons",
-    "description": "Track invited people"
+    "displayName": "Personnes",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
     "Nom": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
-    "Prénom": {
-      "type": "string",
-      "required": true
+    "Prenom": {
+      "type": "string"
     },
-    "Ma présence au mariage": {
+    "Confirmation": {
       "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "Ma présence au Brunch": {
-      "type": "boolean",
-      "default": true,
-      "required": true
+      "required":true
     },
     "Vegetarien": {
       "type": "boolean",
-      "default": true,
-      "required": true
+      "required":true
     },
-    "Allergies": {
+     "Allergies": {
       "type": "string",
-      "required": true
-    },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+      "required":true
     }
   }
 }

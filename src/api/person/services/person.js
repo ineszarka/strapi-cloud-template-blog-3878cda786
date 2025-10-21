@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * about service.
+ * main-catalog service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;

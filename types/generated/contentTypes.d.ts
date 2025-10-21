@@ -430,24 +430,20 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiPersonPerson extends Struct.SingleTypeSchema {
+export interface ApiPersonPerson extends Struct.CollectionTypeSchema {
   collectionName: 'persons';
   info: {
-    description: 'Track invited people';
-    displayName: 'Persons';
+    description: '';
+    displayName: 'Personnes';
     pluralName: 'persons';
     singularName: 'person';
   };
   options: {
-    draftAndPublish: false;
+    draftAndPublish: true;
   };
   attributes: {
-    blocks: Schema.Attribute.DynamicZone<
-      ['shared.media', 'shared.quote', 'shared.rich-text', 'shared.slider']
-    >;
-    Confirmation: Schema.Attribute.Boolean &
-      Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<true>;
+    Allergies: Schema.Attribute.String & Schema.Attribute.Required;
+    Confirmation: Schema.Attribute.Boolean & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -457,12 +453,13 @@ export interface ApiPersonPerson extends Struct.SingleTypeSchema {
       'api::person.person'
     > &
       Schema.Attribute.Private;
-    Name: Schema.Attribute.String & Schema.Attribute.Required;
+    Nom: Schema.Attribute.String;
+    Prenom: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    Surname: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Vegetarien: Schema.Attribute.Boolean & Schema.Attribute.Required;
   };
 }
 
